@@ -19,7 +19,7 @@ $ docker run -v monerod:/monerod -d --name YOUR_CONTAINER_NAME -p YOUR_PORT_1-YO
 Get `monerod` options with:
 
 ```console
-$ docker run --rm calvintam236/monerod --help
+$ docker run --rm calvintam236/monerod
 ```
 
 Fetch logs of a container:
