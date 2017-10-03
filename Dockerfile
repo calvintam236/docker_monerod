@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM debian:jessie-slim
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
 LABEL description="MoneroD in Docker. Full node."
