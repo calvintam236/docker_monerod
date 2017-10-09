@@ -1,7 +1,7 @@
 FROM debian:jessie-slim
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
-LABEL description="MoneroD in Docker. Full node."
+LABEL description="MoneroD in Docker. Full node. Supports CPU mining."
 
 WORKDIR /tmp
 
@@ -13,7 +13,7 @@ RUN apt-get update \
     && mv monero-*/monerod /usr/local/bin/monerod \
     && chmod a+x /usr/local/bin/monerod \
     && rm -r monero-* \
-    && apt-get -y remove bzip2 ca-certificates curl  \
+    && apt-get -y remove bzip2 ca-certificates curl \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
     && rm -rf /var/lib/{apt,dpkg,cache,log}
