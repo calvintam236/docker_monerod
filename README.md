@@ -2,7 +2,7 @@
 
 MoneroD is the console full node & miner provided by [monero-project](https://github.com/monero-project/monero).
 
-ZenD supports Monero (XMR).
+MoneroD supports Monero (XMR).
 
 # How to use this image [X86_64 version]
 
