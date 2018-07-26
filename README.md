@@ -8,7 +8,7 @@ MoneroD supports Monero (XMR).
 
 ### Example usages
 
-Replace `ARCH` for your graphic card architecture. Available option(s): `x86_64`, `aarch64`, `armv7`
+Replace `ARCH` for your system architecture. Available option(s): `x86_64`, `aarch64`, `armv7`
 
 - To run the container in background:
 
