@@ -8,12 +8,12 @@ MoneroD supports Monero (XMR).
 
 ### Example usages
 
-Replace `ARCH` for your graphic card architecture. Available option(s): `x86_64`, `aarch64`
+Replace `ARCH` for your graphic card architecture. Available option(s): `x86_64`, `aarch64`, `armv7`
 
 - To run the container in background:
 
 ```console
-$ docker run -v monerod:/monerod -d --name YOUR_CONTAINER_NAME -p YOUR_PORT_1-YOUR_PORT_3:YOUR_PORT_1-YOUR_PORT_3 calvintam236/monerod:x86_64 --non-interactive --data-dir /monerod --no-igd --rpc-bind-port YOUR_PORT_1 --rpc-bind-ip 0.0.0.0 --rpc-login YOUR_DAEMON_USERNAME:YOUR_DAEMON_PASSWORD --confirm-external-bind
+$ docker run -v monerod:/monerod -d --name YOUR_CONTAINER_NAME -p YOUR_PORT_1-YOUR_PORT_3:YOUR_PORT_1-YOUR_PORT_3 calvintam236/monerod:ARCH --non-interactive --data-dir /monerod --no-igd --rpc-bind-port YOUR_PORT_1 --rpc-bind-ip 0.0.0.0 --rpc-login YOUR_DAEMON_USERNAME:YOUR_DAEMON_PASSWORD --confirm-external-bind
 ```
 
 - Get `monerod` options:
