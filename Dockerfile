@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
+LABEL maintainer="calvintam236"
 LABEL description="MoneroD in Docker. Full node. Supports CPU mining."
 
 WORKDIR /tmp
