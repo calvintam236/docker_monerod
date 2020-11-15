@@ -14,7 +14,7 @@ apt-get update \
 && apt-get -y --no-install-recommends install bzip2 \
 && rm -rf /var/lib/apt/lists/* \
 && tar -jxvf monero-linux-x64-v0.17.1.1.tar.bz2 \
-&& mv monero-linux-x64-v0.17.1.1/monerod /usr/local/bin/ \
+&& mv monero-x86_64-linux-gnu-v0.17.1.1/monerod /usr/local/bin/ \
 && chmod +x /usr/local/bin/monerod \
 && rm -r *
 
