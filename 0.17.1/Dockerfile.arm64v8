@@ -6,15 +6,15 @@ LABEL description="MoneroD in Docker. Full node. Supports CPU mining."
 WORKDIR /tmp/
 
 ADD \
-https://downloads.getmonero.org/cli/monero-linux-armv8-v0.17.1.1.tar.bz2 \
+https://downloads.getmonero.org/cli/monero-linux-armv8-v0.17.1.9.tar.bz2 \
 .
 
 RUN \
 apt-get update \
 && apt-get -y --no-install-recommends install bzip2 \
 && rm -rf /var/lib/apt/lists/* \
-&& tar -jxvf monero-linux-armv8-v0.17.1.1 \
-&& mv monero-armv8-linux-gnu-v0.17.1.1/monerod /usr/local/bin/ \
+&& tar -jxvf monero-linux-armv8-v0.17.1.9 \
+&& mv monero-armv8-linux-gnu-v0.17.1.9/monerod /usr/local/bin/ \
 && chmod +x /usr/local/bin/monerod \
 && rm -r *
 
